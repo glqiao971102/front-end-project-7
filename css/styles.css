@@ -1,0 +1,215 @@
+
+*{
+    
+    font-family: 'Patua One', cursive;
+    font-size: 0.95em;
+}
+
+/* header */
+header{
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+}
+
+header h1 {
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+
+
+.myFace{
+    
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.icon-bell{
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right:  2px solid lightslategray;
+}
+
+header h2 {
+
+    margin-right: 15px;
+}
+
+/* navigation */
+
+.navigation {
+    background-color: lightcoral;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation a{
+    margin-right: 20px;
+}
+
+/* main header */
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main-header h2{
+    padding-left: 50px;
+    margin-right: auto;
+    font-size: 1.6em;
+    color: blueviolet;
+}
+
+.main-header-search{
+
+    font-size: 1.3em;
+    padding: 20px 40px 10px 20px;
+    background-color: grey;
+    border-bottom-left-radius: 20px ;
+}
+/* alert */
+.alert{
+    font-size: 1.2em;
+}
+
+.alert-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: blueviolet;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.alert-banner-close{
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+/* traffic-header */
+
+.traffic-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+
+.traffic-header h3,
+h3{
+    margin-right: auto;
+    font-size: 1.5em;
+    color: blueviolet;
+    padding-left: 20px;
+}
+
+.traffic-nav{
+    display: flex;
+    font-size: 1.15em;
+    padding-top: 17px;
+}
+.traffic-nav li{
+    margin-right: 10px;
+}
+
+/* social image */
+
+.social-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.social-image{
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    color: blueviolet;
+}
+
+
+.social-text{
+    font-size: 1.4em;
+    color: blueviolet;
+}
+
+.social-text p:nth-child(2){
+    font-size: 1.7em;
+    color: black;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "navigation"
+    "main";
+    }
+
+.header {
+    grid-area: header;
+    }
+
+.navigation {
+    grid-area: navigation;
+    }
+
+.main {
+    grid-area: main;
+    display: grid;
+    }
+
+    widget-container-full, .widget-container-half {
+        width: 95vw;
+        }
+       
+
+    
+    
+@media (min-width: 768px) {
+    .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "navigation main";
+        }
+    
+        .main {
+            grid-template-columns: 50% ;
+            }
+            .traffic, .social {
+                grid-column: 1 / span 2;
+                }
+                .mobile, .activity, .settings {
+                    grid-column: 2 / span 1;
+                    }
+                    .widget-container-full {
+                        width: 90vw;
+                        }
+                        .widget-container-half {width: 45vw;
+                        }
+                        }
+                        
+                                    
+        
+        
+           
+            
