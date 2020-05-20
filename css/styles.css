@@ -130,6 +130,9 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: 1px lightgrey solid;
+    padding-top: 20px;
+
     
 }
 
@@ -152,7 +155,79 @@ h3{
     font-size: 1.7em;
     color: black;
 }
+svg{
+    height: 50px;
+    margin: 11px 10px;
+}   
 
+/* New member */
+.members,
+.activity{
+    
+    padding-bottom: 25px;
+
+}
+
+.members img,
+.activity img{
+    
+    border-radius: 50%;
+    
+}
+
+.members-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px lightgrey solid;
+    
+}
+
+.activity-container
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px lightgrey solid;
+    
+}
+
+.arrow{
+    display: none;
+}
+
+.members-text,
+.activity-text{
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.activity-text{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 60px;
+
+}
+
+/*message  */
+
+.message{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
 
 .grid-container {
     display: grid;
@@ -163,6 +238,8 @@ h3{
     "navigation"
     "main";
     }
+
+
 
 .header {
     grid-area: header;
