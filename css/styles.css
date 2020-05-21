@@ -1,6 +1,6 @@
 
 *{
-    
+    box-sizing: border-box;
     font-family: 'Patua One', cursive;
     font-size: 0.95em;
 }
@@ -375,7 +375,8 @@ svg{
 @media (min-width: 768px) {
 
     *{
-        font-size: 1em;
+        font-size: .9em;
+        
     }
 
     .grid-container {
@@ -407,7 +408,7 @@ svg{
         flex-direction: column;
         align-items: center;
         padding-right: 20px;
-
+        width: 135%;
     }
 
 
@@ -415,6 +416,7 @@ svg{
     .navigation a{
         margin-left: 20px;
         padding-left: 20px;
+       
         margin-top: 30px;
         margin-bottom: 40px;
 
@@ -425,12 +427,92 @@ svg{
     }
 
     .main-header h2{
+        font-size: 2.1em;
         padding-left: 0;
     }
 
+    .main-header,
+    .alert{
+        grid-column: 1 / span 2
+    }
+
+    .header-social,
+    .social-container {
+        grid-column: 1 / span 2
+    }
+    
+    .alert-banner p{
+        font-size: 1.6em;
+    }
+    
+    .traffic-header{
+        font-size: 1.5em;
+    }
+
+    header h1 {
+
+        margin-left: 20px;
+    }
+    
+    
+    
+    .myFace{
+        
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    
+    .icon-bell{
+        margin-bottom: 5px;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right:  2px solid lightslategray;
+    }
+    
+    header h2 {
+    
+        margin-right: 15px;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+    
+    .main-header-search{
+
+        font-size: 1.7em;
+        padding: 20px 40px 10px 20px;
+        background-color: white;
+        border-bottom-left-radius: 0 ;
+    }
+
+    /* social image */
+
+.social-container{
+    max-width: 97%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    border: 0;
+
 }
-                                    
+
+    .traffic-header h3, h3{
+        padding-left: 0;
+    }
+
+.daily,
+.mobile{
+    border: 1px solid lightslategrey;
+
+}
+
+.social-twitter,
+.social-facebook,
+.social-google {
+    border: 1px solid lightslategrey;
+    
+}
         
-        
+}  
            
             
