@@ -387,8 +387,10 @@ svg{
         }
     
         .main {
+            
             grid-template-columns: 50% ;
             }
+            
             .traffic, .social {
                 grid-column: 1 / span 2;
                 }
@@ -449,6 +451,10 @@ svg{
         font-size: 1.5em;
     }
 
+    h3{
+        margin-left: 25px;
+    }
+
     header h1 {
 
         margin-left: 20px;
@@ -488,12 +494,14 @@ svg{
     /* social image */
 
 .social-container{
-    max-width: 97%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    border: 0;
 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    max-width: 97%;
+    margin-left: 20px;
+    margin-right: 15px;
+    padding-top: 0px; 
 }
 
     .traffic-header h3, h3{
@@ -510,9 +518,74 @@ svg{
 .social-facebook,
 .social-google {
     border: 1px solid lightslategrey;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    
+
+}
+
+.social-text{
+    font-size: 1.6em;
+    margin-left: 30px;
+}
+
+.members img, .activity img {
+    width: 20%;
+    height: 20%;
+
+}
+
+.members{
+    margin-left: 40px;
+}
+.members,
+.activity{
+    margin-top: 25px;
+    width: 90%;
+    border: 1px solid lightslategrey;
+}
+
+.arrow{
+    display: block;
+}
+
+.arrow a{
+    text-decoration: none;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.members-text, .activity-text {
+    text-align: left;
+    font-size: 1.0em;
+}
+
+.settings{
+    margin: 0;
+}
+
+.settings-form{
+    margin-top: 25px;
+}
+
+.members-container,
+.activity-container{
+    margin-left: 20px;
+    margin-right: 20px;
     
 }
-        
+
+
 }  
+
+@media (min-width: 1024px){
+    .members-container,
+.activity-container{
+    font-size: 1.4em;
+    
+}
+
+}
            
             
