@@ -55,6 +55,7 @@ header h2 {
     margin-right: 20px;
 }
 
+
 .icon-bell{
     transition: .3s ease-out;
 }
@@ -62,6 +63,16 @@ header h2 {
 .icon-bell:hover{
     transform: scale(1.3);
     border: 0;
+}
+
+.dot {
+    background: red;
+    position: absolute;
+    top: 11px;
+    right: 185px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
 }
 /* main header */
 
@@ -332,7 +343,9 @@ svg{
   .indicator {
     height: 100%;
     width: 200%;
+
     margin-left: 12px;
+
     background: white;
     border-radius: 13px;
     transform: translate3d(-75%, 0, 0);
@@ -344,7 +357,7 @@ svg{
   }
   
   .toggle-state:checked ~ .toggle-inner .indicator {
-     transform: translate3d(25%, 0, 0);
+     transform: translate3d(30%, 0, 0);
   }
 
   .toggleButton{
