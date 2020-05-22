@@ -61,7 +61,7 @@ header h2 {
 }
 
 .icon-bell:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     border: 0;
 }
 
@@ -353,7 +353,7 @@ svg{
   }
   
   .toggle-state:checked ~ .active-bg {
-     transform: translate3d(-50%, 0, 0);
+     transform: translate3d(0, 0, 0);
   }
   
   .toggle-state:checked ~ .toggle-inner .indicator {
@@ -434,18 +434,16 @@ svg{
         flex-direction: column;
         align-items: center;
         padding-right: 20px;
-        width: 135%;
     }
 
 
 
-    .navigation a{
-        margin-left: 20px;
-        padding-left: 20px;
-       
-        margin-top: 30px;
-        margin-bottom: 40px;
+    .navigation img{
 
+        margin-left: 10px;
+        max-width: 250%;
+        margin-bottom: 40px;
+        margin-top: 10px;
     }
 
     main{
