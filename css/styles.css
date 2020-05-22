@@ -67,8 +67,8 @@ header h2 {
 
 .badge {
     position: absolute;
-    
-    padding: 7px 7px;
+
+    padding: 5px 5px;
     top: 10px;
     border-radius: 50%;
     background-color: red;
