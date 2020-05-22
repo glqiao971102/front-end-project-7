@@ -14,25 +14,3 @@ alertBanner.addEventListener('click', e => {
         alertBanner.style.display = "none"
     }
 })
-
-//form section
-
-const user = document.getElementById("userField");
-const message = document.getElementById("messageField");
-const send = document.getElementById("send");
-
-send.addEventListener('click', (e) => {
-    // ensure user and message fields are filled out
-    if (user.value === "" && message.value === "") {
-    alert("Please fill out user and message fields before sending")
-    e.preventDefault();
-    } else if (user.value === "" ) {
-    alert("Please fill out user field before sending")
-    e.preventDefault();
-    } else if (message.value === "" ) {
-    alert("Please fill out message field before sending")
-    e.preventDefault();
-    } else {
-    alert(`Message successfully sent to: ${user.value}`);
-    }
-    });

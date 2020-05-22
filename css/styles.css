@@ -1,613 +1,196 @@
-
 *{
     box-sizing: border-box;
-    font-family: 'Patua One', cursive;
-    font-size: 0.95em;
     max-width: 100%;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
-/* header */
-header{
-    background-color: lightskyblue;
+/* header part */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F4C81 ;
+    color: white;;
+}
+.header h1{
+    margin: 20px;
+}
+.header h3{
+    font-size: .9em;
+}
+.bell-container{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    color: black;
 }
-
-header h1 {
-    margin-right: auto;
-    margin-left: 25px;
+.bell-container *{
+    margin-right: 5px;
 }
-
-
-
-.myFace{
-    
-    border-radius: 100%;
-    margin-right: 10px;
+.seperate-line{
+    border-right: 1px black solid;
+    height: 55px;
 }
-
 .icon-bell{
-    margin-bottom: 5px;
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right:  2px solid lightslategray;
+    width: 40px;
+    height: 40px;
+}
+.myFace{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
 }
 
-header h2 {
+/* navigation part*/
 
-    margin-right: 15px;
-}
-
-/* navigation */
-
-.navigation {
-    background-color: lightcoral;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.navigation{
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
+    background-color: #EAAC9C ;
+}
+.icon-nav{
+    width: 40px;
+    height: 40px;
+    margin: 15px;
 }
 
-.navigation a{
-    margin-right: 20px;
+/* Main part */
+
+main{
+    background-color: #FFF;
 }
-
-
-.icon-bell{
-    transition: .3s ease-out;
-}
-
-.icon-bell:hover{
-    transform: scale(1.2);
-    border: 0;
-}
-
-.badge {
-    position: absolute;
-
-    padding: 5px 5px;
-    top: 10px;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
-  }
-/* main header */
 
 .main-header{
     display: flex;
-    
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.main-header h2{
-    padding-left: 50px;
-    margin-right: auto;
-    font-size: 1.6em;
-    color: blueviolet;
+    justify-content: flex-start;
 }
 
 .main-header-search{
-
-    font-size: 1.3em;
-    padding: 20px 40px 10px 20px;
-    background-color: grey;
-    border-bottom-left-radius: 20px ;
+    align-self: center;
+    margin-left: auto;
+    padding: 22px 22px 22px 40px;
+    background-color:#cfc1c0 ;
+    border-bottom-left-radius: 10px;
 }
+
+.main-header h2{
+
+    margin: 20px;
+}
+
 /* alert */
+
+
 .alert{
-    font-size: 1.2em;
+    margin-left: 20px;
+    padding-left: 20px;
+    background-color: #Fe5000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-.alert-banner {
+.alert-banner{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    background-color: blueviolet;
-    margin-left: 20px;
-    padding-left: 10px;
-    border-top-left-radius: 20px ;
-    border-bottom-left-radius: 20px ;
+    justify-content: flex-start;
+    width: 95%;
 }
 
 .alert-banner-close{
     margin-left: auto;
-    padding-right: 20px;
 }
 
-/* traffic-header */
+/* traffic header */
 
 .traffic-header{
+    margin-left: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-}
-
-.traffic-header h3,
-h3{
-    margin-right: auto;
-    font-size: 1.5em;
-    color: blueviolet;
-    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .traffic-nav{
+    margin-left: auto;
     display: flex;
-    font-size: 1.15em;
-    padding-top: 17px;
 }
+
 .traffic-nav li{
     margin-right: 10px;
 }
 
-/* social image */
+/* Traffic, daily, dougnut chart */
 
-.social-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 1px lightgrey solid;
-    padding-top: 20px;
-
-    
-}
-
-.social-image{
-    max-width: 100%;
-    background-color: blueviolet;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    font-size: 1.5em;
-    color: blueviolet;
-}
-
-
-.social-text{
-    font-size: 1.4em;
-    color: blueviolet;
-}
-
-.social-text p:nth-child(2){
-    font-size: 1.7em;
-    color: black;
-}
-svg{
-    height: 50px;
-    margin: 11px 10px;
-}   
-
-/* Chart */
 #traffic-chart,
 #daily-chart,
 #doughnut-chart{
     width: 100%;
     height: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1.5px #cfc1c0 solid;
 }
 
-/* New member & activity */
+.daily-header,
+.doughnut-header{
+    margin-left: 20px;
+}
 
+/* Social state */
+.social{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+}
 
-.members img,
-.activity img{
-    
-    padding-left: 20px;
+.social-header{
+    margin-left: 20px;
+}
+
+.social-image{
+    background-color: #B634BB;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    
-}
-
-.members-container
-{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px lightgrey solid;
-    
-}
-
-.activity-container
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px lightgrey solid;
-    
-}
-
-.arrow{
-    display: none;
-}
-
-.members-text,
-.activity-text{
+    border-radius: 100%;
     text-align: center;
-    font-size: 1.5em;
-
 }
 
-.activity-text{
-    
-    margin-left: 20px;
-
-}
-
-/*message  */
-
-.message,
-.settings{
+.social-container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.message-form,
-.settings-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-}
-.settings{
-    margin-top: 50px;
-    padding-bottom: 200px;
+/* SVG icon */
+.twitter-icon{
+    padding: 15px;
+    margin: 7px;
 }
 
-.form-field,
-.form-area{
-    width: 75%;
-    margin-bottom: 10px;
-    padding: 10px;
+.facebook-icon{
+    margin-top: 12px;
 }
 
-.form-area{
-    height: 100px;
+.google-icon{
+    margin-top: 23px;
 }
 
-.send-button{
-    background-color: blueviolet;
-    border: 1px solid lightslategray;
-    width: 75%;
-    padding: 5px;
-    font-size: 1.2em;
-}
 
-.set-button{
-    background-color: blueviolet;
-    border: 1px solid lightslategray;
-    padding: 5px;
-    font-size: 1.2em;
-    margin-right: 25px;
-}
+/* Grid Container */
 
-/* toggle CSS button */
-
-.label {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .label-text {
-    margin-left: 20px;
-    font-size: 1.3em;
-    margin-right: 10px;
-  }
-  
-  .toggle {
-    isolation: isolate;
-    position: relative;
-    height: 24px;
-    width: 48px;
-    border-radius: 15px;
-    background: #d6d6d6;
-    overflow: hidden;
-  }
-  
-  .toggle-inner {
-    z-index: 2;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    height: 22px;
-    width: 46px;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-  
-  .active-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 200%;
-    background: #003dda;
-    transform: translate3d(-100%, 0, 0);
-    transition: transform 0.05s linear 0.17s;
-  }
-  
-  .toggle-state {
-    display: none;
-  }
-  
-  .indicator {
-    height: 100%;
-    width: 200%;
-
-    margin-left: 12px;
-
-    background: white;
-    border-radius: 13px;
-    transform: translate3d(-75%, 0, 0);
-    transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  }
-  
-  .toggle-state:checked ~ .active-bg {
-     transform: translate3d(0, 0, 0);
-  }
-  
-  .toggle-state:checked ~ .toggle-inner .indicator {
-     transform: translate3d(30%, 0, 0);
-  }
-
-  .toggleButton{
-      display: flex;
-      flex-direction: column;
-  }
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas:
+    grid-template-areas: 
     "header"
     "navigation"
     "main";
-    }
+}
 
-
-
-.header {
+.header{
     grid-area: header;
-    }
+}
 
-.navigation {
+.navigation{
     grid-area: navigation;
-    }
+}
 
-.main {
+.main{
     grid-area: main;
-    display: grid;
-    }
-
-    .widget-container-full, .widget-container-half {
-        width: 95vw;
-        }
-       
-
-    
-    
-@media (min-width: 768px) {
-
-    *{
-        font-size: .9em;
-        
-    }
-
-    .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-areas:
-    "header header"
-    "navigation main";
-        }
-    
-        .main {
-            
-            grid-template-columns: 50% ;
-            }
-            
-            .traffic, .social {
-                grid-column: 1 / span 2;
-                }
-                .mobile, .activity, .settings {
-                    grid-column: 2 / span 1;
-                    }
-                    .widget-container-full {
-                        width: 90vw;
-                        }
-                        .widget-container-half {width: 45vw;
-                        }
-                        
-    
-    .navigation{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 20px;
-    }
-
-
-
-    .navigation img{
-
-        margin-left: 10px;
-        max-width: 250%;
-        margin-bottom: 40px;
-        margin-top: 10px;
-    }
-
-    main{
-        margin-left: 20px;
-    }
-
-    .main-header h2{
-        font-size: 2.1em;
-        padding-left: 0;
-    }
-
-    .main-header,
-    .alert{
-        grid-column: 1 / span 2
-    }
-
-    .header-social,
-    .social-container {
-        grid-column: 1 / span 2
-    }
-    
-    .alert-banner p{
-        font-size: 1.6em;
-    }
-    
-    .traffic-header{
-        font-size: 1.5em;
-    }
-
-    h3{
-        margin-left: 25px;
-    }
-
-    header h1 {
-
-        margin-left: 20px;
-    }
-    
-    
-    
-    .myFace{
-        
-        border-radius: 100%;
-        margin-right: 10px;
-    }
-    
-    .icon-bell{
-        margin-bottom: 5px;
-        margin-right: 10px;
-        padding-right: 10px;
-        border-right:  2px solid lightslategray;
-    }
-    
-    header h2 {
-    
-        margin-right: 15px;
-    }
-    h2{
-        font-size: 1.7em;
-    }
-    
-    .main-header-search{
-
-        font-size: 1.7em;
-        padding: 20px 40px 10px 20px;
-        background-color: white;
-        border-bottom-left-radius: 0 ;
-    }
-    
-    /* social image */
-
-.social-container{
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
-    max-width: 97%;
-    margin-left: 20px;
-    margin-right: 15px;
-    padding-top: 0px; 
 }
-
-    .traffic-header h3, h3{
-        padding-left: 0;
-    }
-
-.daily,
-.mobile{
-    border: 1px solid lightslategrey;
-
-}
-
-.social-twitter,
-.social-facebook,
-.social-google {
-    border: 1px solid lightslategrey;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    
-
-}
-
-.social-text{
-    font-size: 1.6em;
-    margin-left: 30px;
-}
-
-.members img, .activity img {
-    width: 20%;
-    height: 20%;
-
-}
-
-.members{
-    margin-left: 40px;
-}
-.members,
-.activity{
-    margin-top: 25px;
-    width: 90%;
-    border: 1px solid lightslategrey;
-}
-
-.arrow{
-    display: block;
-}
-
-.arrow a{
-    text-decoration: none;
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.members-text, .activity-text {
-    text-align: left;
-    font-size: 1.0em;
-}
-
-.settings{
-    margin: 0;
-}
-
-.settings-form{
-    margin-top: 25px;
-}
-
-.members-container,
-.activity-container{
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-
-
-}  
-
-@media (min-width: 1024px){
-    .members-container,
-.activity-container{
-    font-size: 1.4em;
-    
-}
-
-}
-           
-            
