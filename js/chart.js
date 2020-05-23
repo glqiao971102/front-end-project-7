@@ -1,4 +1,6 @@
-const trafficCanvas = document.getElementById("traffic-chart")
+const traffic_Chart = document.getElementById("traffic-chart")
+const dailyCanvas = document.getElementById("daily-chart");
+const mobileCanvas = document.getElementById("doughnut-chart");
 
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
@@ -10,10 +12,9 @@ let trafficData = {
     borderWidth: 1,
     }]
     };
+
 let trafficOptions = {
         aspectRatio: 2.5,
-        responsive: true,
-        maintainAspectRatio: false,
         animation: {
         duration: 0
         },
@@ -27,17 +28,16 @@ let trafficOptions = {
         legend : {
         display: false
         }
-        
         };
+        
 
-let trafficChart = new Chart(trafficCanvas, {
+        let trafficChart = new Chart(traffic_Chart, {
             type: 'line',
             data: trafficData,
             options: trafficOptions
-        });
+            });
 
-// Daily chart
-const dailyCanvas = document.getElementById("daily-chart");
+// bar chart
 // data for daily traffic bar chart
 const dailyData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
@@ -60,17 +60,15 @@ const dailyData = {
     display: false
     }
     }
-
-let dailyChart = new Chart(dailyCanvas, {
+    let dailyChart = new Chart(dailyCanvas, {
         type: 'bar',
         data: dailyData,
         options: dailyOptions
-    });
-        
-// dougnut chart
-const mobileCanvas = document.getElementById("doughnut-chart");
+        });
+            
+ // doughnut
 
-const mobileData = {
+ const mobileData = {
     labels: ["Desktop", "Tablet", "Phones"],
     datasets: [{
     label: '# of Users',
@@ -83,8 +81,8 @@ const mobileData = {
     ]
     }]
     };
-
-const mobileOptions = {
+ 
+    const mobileOptions = {
         legend: {
         position: 'right',
         labels: {
@@ -93,13 +91,10 @@ const mobileOptions = {
         }
         }
         }
-        
 
-let mobileChart = new Chart(mobileCanvas, {
-        type: 'doughnut',
-        data: mobileData,
-        options: mobileOptions
-        });
-            
-           
+        let mobileChart = new Chart(mobileCanvas, {
+            type: 'doughnut',
+            data: mobileData,
+            options: mobileOptions
+            });
             
