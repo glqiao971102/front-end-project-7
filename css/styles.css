@@ -118,9 +118,11 @@ main{
 
 /* Traffic, daily, dougnut chart */
 
+
 #traffic-chart,
 #daily-chart,
 #doughnut-chart{
+    
     width: 100%;
     height: 100%;
     padding-bottom: 10px;
@@ -136,7 +138,9 @@ main{
 .social{
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 10px;
+    border-bottom: 1.5px #cfc1c0 solid;
 }
 
 .social-header{
@@ -145,21 +149,47 @@ main{
 
 .social-image{
     background-color: #B634BB;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     text-align: center;
 }
 
 .social-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
+}
+
+.social-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-text p:nth-of-type(1){
+    
+    font-size: 1.3em;
+    
+}
+
+.social-text p:nth-of-type(1)::after{
+    content: " : ";
+}
+
+.social-text p:nth-of-type(2){
+    
+    font-size: 1.6em;
+    margin-left: 5px;
+    font-weight: bold;
 }
 
 /* SVG icon */
 .twitter-icon{
     padding: 15px;
-    margin: 7px;
+    margin: 4px;
 }
 
 .facebook-icon{
@@ -167,9 +197,168 @@ main{
 }
 
 .google-icon{
+    margin-left: 15px;
     margin-top: 23px;
 }
 
+/* Member container */
+.members {
+    padding-bottom: 10px;
+    border-bottom: 1.5px #cfc1c0 solid;
+}
+
+
+.members h3{
+    margin-left: 20px;
+    
+}
+
+.members-container{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1.5px #cfc1c0 solid;
+}
+
+.members-text,
+.activity-text{
+    margin-left: 10px;
+}
+
+.members-container p{
+    margin-left: auto;
+}
+
+.members-container:nth-of-type(4){
+    border-bottom: 0;
+    padding: 0px;
+}
+
+.members-container img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+/* activty container */
+.activity {
+    padding-bottom: 10px;
+    border-bottom: 1.5px #cfc1c0 solid;
+}
+
+
+.activity h3{
+    margin-left: 20px;
+    
+}
+
+.activity-container{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1.5px #cfc1c0 solid;
+}
+
+.arrow{
+    margin-left: auto;
+}
+
+.arrow a{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.activity-text p:nth-child(1){
+    font-size: 12px;
+}
+
+.activity-text p:nth-child(2){
+    font-size: 12px;
+}
+
+.activity-container:nth-of-type(4){
+    border-bottom: 0;
+    padding: 0px;
+}
+
+.activity-container img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+/* Message */
+
+.message h3{
+    margin-left: 20px;
+    
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px 0px;
+    border-bottom: 1.5px #cfc1c0 solid;
+}
+
+.message-form *{
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+.button-primary,
+.button-disabled{
+    background-color: #34A7C1;
+    color: white;
+}
+
+/* settings */
+.settings{
+    margin-bottom: 10px;
+}
+
+.settings h3,
+.toogle-button {
+    margin-left: 20px;
+}
+
+.toogle-button{
+    display: flex;
+    align-items: center;
+}
+
+.switch_1{
+    margin-left: 10px;
+}
+
+.switch_2 {
+    margin-left: 38px;
+}
+
+.timezone-container{
+   display: grid;
+   grid-template-columns: 2fr;
+   margin-left: 20px;
+   margin-right: 20px;
+   
+}
+#timezone{
+    margin-bottom: 10px;
+}
+
+.settings-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
 
 /* Grid Container */
 
@@ -194,3 +383,5 @@ main{
 .main{
     grid-area: main;
 }
+
+
